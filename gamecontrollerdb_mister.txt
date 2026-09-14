@@ -5,6 +5,19 @@
 030000004c050000e60c000011810000,PS5 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
 050000004c050000e60c000000810000,PS5 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
 
+# DS4 workaround for unpatched MiSTer 6.18 hid-playstation exposing BTN_Z.
+# Skip the nonexistent button at b4; keep Options as Start and PS as Guide.
+# These GUIDs also occur on 5.15 and fixed kernels: the database cannot detect
+# the kernel. Do not use these overrides with hid-sony or the DS4 kernel fix.
+030000004c050000a00b000011810000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+030000004c050000c405000000810000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+030000004c050000c405000011810000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+030000004c050000cc09000011810000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+050000004c050000c405000000810000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+050000004c050000c405000001800000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+050000004c050000cc09000000810000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+050000004c050000cc09000001800000,PS4 Controller,a:b0,b:b1,back:b9,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b11,leftshoulder:b5,leftstick:b12,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b6,rightstick:b13,righttrigger:a5,rightx:a3,righty:a4,start:b10,x:b3,y:b2,platform:MiSTer,
+
 #Guncon 2 plug and play entries for various cores
 030000009a0b00006a01000000010000,Namco GunCon 2,dpright:h0.2,dpleft:h0.8,dpdown:h0.4,dpup:h0.1,b:b2,menuok:b2,menuesc:b0,start:b0,a:b1,guide:h0.4,guide2:b5,platform:MiSTer,mistercore:PSX
 030000009a0b00006a01000000010000,Namco GunCon 2,dpright:h0.2,dpleft:h0.8,dpdown:h0.4,dpup:h0.1,menuok:b2,menuesc:b0,rightshoulder:b2,start:b5,guide:h0.4,guide2:b5,platform:MiSTer,mistercore:NES
